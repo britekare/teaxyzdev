@@ -1,6 +1,6 @@
 {
-  "name": "Teaa",
-  "short_name": "Teaa",
+  "name": "Tea app",
+  "short_name": "Tea app",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
