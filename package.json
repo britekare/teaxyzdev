@@ -1,5 +1,5 @@
 {
-  "name": "client",
+  "name": "teaxyzdev",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -15,6 +16,7 @@
     "@angular/cdk": "^9.2.1",
     "@angular/common": "~9.0.0",
     "@angular/compiler": "~9.0.0",
+    "@angular/compiler-cli": "^9.0.7",
     "@angular/core": "~9.0.0",
     "@angular/forms": "~9.0.0",
     "@angular/platform-browser": "~9.0.0",
@@ -23,12 +25,15 @@
     "@angular/service-worker": "~9.0.0",
     "bootstrap": "4.1.1",
     "bootswatch": "^4.4.1",
+    "express": "^4.17.1",
     "font-awesome": "^4.7.0",
     "ngx-bootstrap": "^5.6.1",
     "ngx-spinner": "^9.0.2",
     "ngx-toastr": "^12.0.1",
+    "path": "^0.12.7",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
+    "typescript": "~3.7.5",
     "uuid": "^7.0.3",
     "uuidv4": "^6.0.7",
     "xng-breadcrumb": "^5.0.1",
@@ -36,12 +41,12 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.1",
-    "@angular/cli": "~9.0.1",
-    "@angular/compiler-cli": "~9.0.0",
+    "@angular/cli": "^11.1.0",
+    "@angular/compiler-cli": "^9.0.7",
     "@angular/language-service": "~9.0.0",
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
@@ -54,5 +59,9 @@
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
     "typescript": "~3.7.5"
+  },
+  "engines": {
+    "node": "12.19.0",
+    "npm": "6.14.8"
   }
 }
